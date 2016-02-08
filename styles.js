@@ -100,7 +100,8 @@ var nextStyle = function(){
 //     removeStylePair(currentStyle);
 // });
 
-removeElements();
+var prevStyle = currentStyle;
+prevStyle.forEach(removeStylePair);
 
 //   currentStyle = [];
  removeStyle(currentStyle);
