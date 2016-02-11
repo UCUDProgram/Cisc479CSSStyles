@@ -94,32 +94,30 @@ var removeElements = function(){
   });  
 };
 
+var deleteStyleArray = function(){
+  currentStyle.forEach(function (aPairEle){
+    var index = currentStyle.indexOf(aPairEle);
+    currentStyle.splice(index, 1);
+  })  
+};
+
 var nextStyle = function(){
 
-// currentStyle.forEach(function (aPair){
-//     removeStylePair(currentStyle);
-// });
+    var prevStyle = currentStyle;
+    prevStyle.forEach(removeStylePair);
+    removeStyle(currentStyle);
+    deleteStyleArray();
+    console.log(currentStyle);
+    
+    
+    blockTagsDecide();
+    sectionsDecide();
+    headersDecide();
+    textHoldersDecide();
 
-var prevStyle = currentStyle;
-prevStyle.forEach(removeStylePair);
 
-//   currentStyle = [];
- removeStyle(currentStyle);
-  console.log(currentStyle);
-  
-  blockTagsDecide();
-  sectionsDecide();
-  headersDecide();
-  textHoldersDecide();
-  
-//   console.log(currentStyle);
-//   console.log(currentStyle[0]);
+    applyStyle(currentStyle);
  
- applyStyle(currentStyle);
- 
-//  currentStyle.forEach(function (aPair){
-//      applyStylePair(aPair);
-//  });
 };
 
 var appStart = function(){
