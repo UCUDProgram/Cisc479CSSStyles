@@ -22,48 +22,48 @@ var randomMod = function(array){
 var blockTagsDecide = function(){
     blockTags.forEach(function (x){
         currentStyle.push([x,randomMod(variants)]);
-        // currentStyle.push([x,randomMod(fontSize)]);
+        currentStyle.push([x,randomMod(fontSize)]);
         currentStyle.push([x,randomMod(color)]);
         currentStyle.push([x,randomMod(textalignment)]);
         currentStyle.push([x,randomMod(fontStyle)]);
-        // currentStyle.push([x,randomMod(letterSpacing)]);
-        // currentStyle.push([x,randomMod(borders)]);
+        currentStyle.push([x,randomMod(letterSpacing)]);
+        currentStyle.push([x,randomMod(borders)]);
     })
 };
 
 var sectionsDecide = function(){
     sections.forEach(function (x){
         currentStyle.push([x,randomMod(variants)]);
-        // currentStyle.push([x,randomMod(fontSize)]);
+        currentStyle.push([x,randomMod(fontSize)]);
         currentStyle.push([x,randomMod(color)]);
         currentStyle.push([x,randomMod(textalignment)]);
         currentStyle.push([x,randomMod(fontStyle)]);
-        // currentStyle.push([x,randomMod(letterSpacing)]);
-        // currentStyle.push([x,randomMod(borders)]);
+        currentStyle.push([x,randomMod(letterSpacing)]);
+        currentStyle.push([x,randomMod(borders)]);
     })    
 };
 
 var headersDecide = function(){
     headers.forEach(function (x){
         currentStyle.push([x,randomMod(variants)]);
-        // currentStyle.push([x,randomMod(fontSize)]);
+        currentStyle.push([x,randomMod(fontSize)]);
         currentStyle.push([x,randomMod(color)]);
         currentStyle.push([x,randomMod(textalignment)]);
         currentStyle.push([x,randomMod(fontStyle)]);
-        // currentStyle.push([x,randomMod(letterSpacing)]);
-        // currentStyle.push([x,randomMod(borders)]);
+        currentStyle.push([x,randomMod(letterSpacing)]);
+        currentStyle.push([x,randomMod(borders)]);
     })    
 };
 
 var textHoldersDecide = function(){
     textHolders.forEach(function (x){
         currentStyle.push([x,randomMod(variants)]);
-        // currentStyle.push([x,randomMod(fontSize)]);
+        currentStyle.push([x,randomMod(fontSize)]);
         currentStyle.push([x,randomMod(color)]);
         currentStyle.push([x,randomMod(textalignment)]);
         currentStyle.push([x,randomMod(fontStyle)]);
-        // currentStyle.push([x,randomMod(letterSpacing)]);
-        // currentStyle.push([x,randomMod(borders)]);
+        currentStyle.push([x,randomMod(letterSpacing)]);
+        currentStyle.push([x,randomMod(borders)]);
     })    
 };
 
