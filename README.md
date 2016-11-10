@@ -14,3 +14,7 @@ The css style refers to the style that will be applied to that element
   Each element would have a random style from each of these style categories.
 
 The body of the website (website page) has a click listener attached to change the page to a different random visual appearance on a mouse click.
+
+The link below is to this active project, so you can see the behavior of the website, running in realtime.
+
+https://ucudprogram.github.io/Cisc479CSSStyles/
